@@ -393,4 +393,4 @@ Nonce: {timestamp}"""
         self.ip = await self.get_ip()
 
     async def get_ip(self):
-        return await (await self.session.get('https://api.ipify.org', proxy=self.proxy)).text()
+        return await (await self.session.get('https://ipinfo.io', proxy=self.proxy)).text()
